@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Play Drop!</title>
+	<link rel="stylesheet" type="text/css" href="/templates/impact/screen.css" />
+	<link rel="Shortcut Icon" href="/templates/impact/favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/news/feed" />
+	
+	<style type="text/css">
+		#frame {
+			width: 345px;
+			height: 623px;
+			padding: 27px 0 0 23px;
+			background: url(media/frame.png);
+			background-repeat: no-repeat;
+			margin: 20px auto 40px auto;
+		}
+	</style>
+
+	<script type="text/javascript" src="drop.js"></script>
+	<script type="text/javascript">			
+		ig.module('main').requires('drop').defines(function(){
+			DropGame.start();
+		});
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-571256-10']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+<div id="title">
+	<div class="content">
+		<a href="/" id="impact"><img src="/templates/impact/impact.png" alt="Impact"/></a>
+		<div id="menu">
+			<a href="/buy-impact">Buy</a>
+			<a href="/documentation">Docs</a>
+			<a href="/forums">Forums</a>
+			<a href="/blog">Blog</a>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<div id="breadcrumbs">
+	<div class="content">
+		<h1>Play Drop!</h1>
+	</div>
+</div>
+
+<div class="wideContent">
+	<div id="sidebar"></div>
+	
+	<div id="content">
+	
+		<div id="frame">
+			<canvas id="canvas">
+				<p>
+					Hey there, it looks like you're using Microsoft's Internet Explorer. Microsoft
+					hates the Web and doesn't support HTML5 :( 
+				</p>
+			</canvas>
+		</div>
+
+		<p>
+			Works great on the iPhone and iPad too!
+		</p>
+		<p>
+			Also try <a href="http://playbiolab.com">Biolab Disaster</a>!
+		</p>
+		
+		<p style="text-align: right">
+			<a href="/documentation/drop-source-code">View the source »</a>
+		</p>
+	</div>		
+	<div class="clear"></div>
+</div>
+
+
+<div id="foot">
+	<div id="copy" class="content">
+		ImpactJS.org &copy; 2010 
+		<a href="http://www.phoboslab.org/">Dominic Szablewski</a>
+		powered by <a href="http://www.pagenode.org">Pagenode</a> - 
+		made in Hesse &#x2665;
+	</div>
+</div>
+</body>
+</html>
